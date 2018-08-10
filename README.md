@@ -1,6 +1,6 @@
 # [Feedback](https://feedback.abranhe.com)
 
-> i wanna hear yo'all opinions
+> i wanna hear y'all opinions
 
 ![screenshot](https://cdn.abraham.gq/projects/feedback/screenshot.png)
 
