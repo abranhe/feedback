@@ -20,10 +20,13 @@
 
 	const params = new URL(location.href).searchParams;
 
-	if (params.has('product')) {
-		const title = `Feedback for ${params.get('product')}`;
+	if (params.has('project')) {
+		const projectName = `${params.get('project')}`;
+		const title = `Feedback for ${projectName}`;
 		$('#main h1').text(title);
 		$('title').text(title);
+
+		document.getElementById('project').value = `${projectName}`;
 	}
 
 	const form = $('#feedback-form');
@@ -57,9 +60,9 @@
 	}
 
 	form.on('submit', () => {
-		const product = params.has('product') ? (': ' + params.get('product')) : '';
+		const project = params.has('project') ? (': ' + params.get('project')) : '';
 		const message = form.find('[name="message"]').val().slice(0, 100);
-		const subject = 'Feedback' + product + ' - ' + message;
+		const subject = 'Feedback' + project + ' - ' + message;
 		form.prepend(
 			$(`<input type="hidden" name="_subject">`).val(subject)
 		);
