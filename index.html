@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>'s Feedback</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="https://cdn.abraham.gq/abraham/abraham.ico" sizes="32x32">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+		<script defer src="index.js"></script>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123751020-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-123751020-1');
+		</script>
+		<!-- / Google Analytics -->
+	</head>
+	<body>
+		<div id="nav-container"></div>
+		<section class="hero is-fullheight">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-vcentered">
+						<div id="main" class="column is-half is-centered has-nice-link">
+							<h1 class="title is-2"><img src="https://cdn.abraham.gq/abraham/abraham.png" class="img">'s Feedback</h1>
+							<h2 class="title is-6">I wanna hear ya'all options</h2>
+							<form id="feedback-form" action="https://formspree.io/abraham@abranhe.com" method="post">
+								<input type="hidden" name="_next" value="https://feedback.abranhe.com/?success">
+								<div class="field">
+									<label class="label">Name</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="name">
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Related Project*</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="project" required>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Email*</label>
+									<div class="control">
+										<input class="input is-medium" type="email" name="email" required>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Message*</label>
+									<div class="control">
+										<textarea class="textarea is-medium" placeholder="Please discribe the issue in details." name="message" minlength="20" rows="7" required autofocus></textarea>
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<button class="button is-medium is-link " type="submit">Send Feedback 😝</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
