@@ -1,4 +1,3 @@
-/* eslint-env browser, jquery */
 (() => {
 	if (window.location.search === '?success') {
 		$('#main').html(`
@@ -27,6 +26,16 @@
 		$('title').text(title);
 
 		document.getElementById('project').value = `${projectName}`;
+	}
+
+	if (params.has('name')) {
+		const username = `${params.get('name')}`;
+		document.getElementById('name').value = `${username}`;
+	}
+
+	if (params.has('message')) {
+		const msg = `${params.get('message')}`;
+		document.getElementById('msg').value = `${msg}`;
 	}
 
 	const form = $('#feedback-form');
