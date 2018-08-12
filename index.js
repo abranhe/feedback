@@ -30,8 +30,6 @@
 	if (params.has('description')) {
 		const summary = `${params.get('description')}`;
 		$('#main h2').text(summary);
-
-		document.getElementById('project').value = `${projectName}`;
 	}
 
 	if (params.has('name')) {
