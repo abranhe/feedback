@@ -23,7 +23,13 @@
 		const projectName = `${params.get('project')}`;
 		const title = `Feedback for ${projectName}`;
 		$('#main h1').text(title);
-		$('title').text(title);
+
+		document.getElementById('project').value = `${projectName}`;
+	}
+
+	if (params.has('description')) {
+		const summary = `${params.get('description')}`;
+		$('#main h2').text(summary);
 
 		document.getElementById('project').value = `${projectName}`;
 	}
