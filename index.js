@@ -42,6 +42,10 @@
 		document.getElementById('msg').value = `${msg}`;
 	}
 
+	if (params.has('submit')) {
+		document.getElementById("feedback-form").submit();
+	}
+
 	const form = $('#feedback-form');
 
 	for (const [key, value] of params) {
