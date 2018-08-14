@@ -42,6 +42,11 @@
 		document.getElementById('msg').value = `${msg}`;
 	}
 
+	if (params.has('email')) {
+		const email = `${params.get('email')}`;
+		document.getElementById('email').value = `${email}`;
+	}
+
 	if (params.has('submit')) {
 		document.getElementById("feedback-form").submit();
 	}
