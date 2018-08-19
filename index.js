@@ -51,6 +51,11 @@
 		document.getElementById("feedback-form").submit();
 	}
 
+	if (params.has('url')) {
+		const url = `${params.get('url')}`;
+		$('#link').html('<a href="https://' + url + '">' + url + '</a>');
+	}
+
 	const form = $('#feedback-form');
 
 	for (const [key, value] of params) {
