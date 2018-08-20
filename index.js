@@ -53,7 +53,7 @@
 
 	if (params.has('url')) {
 		const url = `${params.get('url')}`;
-		$('#link').html('<a href="https://' + url + '">' + url + '</a>');
+		$('#link').html('<a href="' + url + '">' + url + '</a>');
 	}
 
 	const form = $('#feedback-form');
