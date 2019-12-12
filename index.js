@@ -95,9 +95,3 @@
 		);
 	});
 })();
-
-(() => {
-	$(document).on('click', '.navbar-burger', () => {
-		$('.navbar-burger, .navbar-menu').toggleClass('is-active');
-	});
-})();
